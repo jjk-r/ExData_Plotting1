@@ -1,6 +1,6 @@
 library(sqldf)
 features = read.table("features.txt")
-features = read.table("features.txt")
+activity_labels = read.table("activity_labels.txt")
 x_train = read.table("train/X_train.txt", col.names=features$V2)
 train = x_train[c(1:6)]
 y_train = read.table("train/y_train.txt")
